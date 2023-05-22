@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { ChakraProvider } from "@chakra-ui/react";
+import Theme from "theme.ts"
 
 import "./index.css";
 
@@ -11,30 +13,52 @@ import { MainLayout } from "Layouts";
 let Router = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayout><Home /></MainLayout>,
+    element: (
+      <MainLayout>
+        <Home />
+      </MainLayout>
+    ),
   },
   {
     path: "/profile",
-    element: <MainLayout><Profile /></MainLayout>,
+    element: (
+      <MainLayout>
+        <Profile />
+      </MainLayout>
+    ),
   },
   {
     path: "/chat",
-    element: <MainLayout><Chat /></MainLayout>,
+    element: (
+      <MainLayout>
+        <Chat />
+      </MainLayout>
+    ),
   },
   {
     path: "/map",
-    element: <MainLayout><Map /></MainLayout>,
+    element: (
+      <MainLayout>
+        <Map />
+      </MainLayout>
+    ),
   },
   {
     path: "/home",
-    element: <MainLayout><Home /></MainLayout>,
+    element: (
+      <MainLayout>
+        <Home />
+      </MainLayout>
+    ),
   },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={Router} />
+    <ChakraProvider theme={Theme}>
+      <RouterProvider router={Router} />
+    </ChakraProvider>
   </React.StrictMode>
 );
 
