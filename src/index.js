@@ -1,10 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import "./index.css";
+
 import { Home, Chat, Map, Profile } from "Pages";
 import { MainLayout } from "Layouts";
+
 let Router = createBrowserRouter([
   {
     path: "/",
