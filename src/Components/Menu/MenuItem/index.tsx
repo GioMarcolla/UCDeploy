@@ -9,7 +9,7 @@ type Props = {
 };
 
 // NO Class Components unless 1000% needed!
-let NavItem: FC<Props> = ({ name, path }: Props) => {
+let MenuItem: FC<Props> = ({ name, path }: Props) => {
   return (
     <div>
       <Link to={path}>{name}</Link>
@@ -17,4 +17,4 @@ let NavItem: FC<Props> = ({ name, path }: Props) => {
   );
 };
 
-export default NavItem;
+export default MenuItem;

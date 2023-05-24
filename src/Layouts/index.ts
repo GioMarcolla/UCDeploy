@@ -1,5 +1,5 @@
-import MainLayout from "./MainLayout";
+import AppLayout from "./AppLayout";
+import WebLayout from "./WebLayout";
+import LoggedOutLayout from "./LoggedOutLayout";
 
-export {
-    MainLayout
-}
+export { AppLayout, LoggedOutLayout, WebLayout };

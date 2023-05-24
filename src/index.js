@@ -1,63 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Theme from "theme.ts";
+import PageRouter from "Pages/PageRouter";
 import { ChakraProvider } from "@chakra-ui/react";
-import Theme from "theme.ts"
+import { initFirebase } from "./firebase.js";
 
 import "./index.css";
 
-import { Home, Chat, Map, Profile } from "Pages";
-import { MainLayout } from "Layouts";
-
-let Router = createBrowserRouter([
-  {
-    path: "/",
-    element: (
-      <MainLayout>
-        <Home />
-      </MainLayout>
-    ),
-  },
-  {
-    path: "/profile",
-    element: (
-      <MainLayout>
-        <Profile />
-      </MainLayout>
-    ),
-  },
-  {
-    path: "/chat",
-    element: (
-      <MainLayout>
-        <Chat />
-      </MainLayout>
-    ),
-  },
-  {
-    path: "/map",
-    element: (
-      <MainLayout>
-        <Map />
-      </MainLayout>
-    ),
-  },
-  {
-    path: "/home",
-    element: (
-      <MainLayout>
-        <Home />
-      </MainLayout>
-    ),
-  },
-]);
+// const [app, analytics] = initFirebase();
+//Get current user
+//Save to "context/redux"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ChakraProvider theme={Theme}>
-      <RouterProvider router={Router} />
+      {/* { user ?  <PageRouter /> : <LogIn /> } */}
+      <PageRouter />
     </ChakraProvider>
   </React.StrictMode>
 );

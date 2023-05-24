@@ -1,11 +1,17 @@
-import Home from "./Home";
-import Chat from "./Chat";
-import Map from "./Map";
-import Profile from "./Profile";
+import HomePage from "./HomePage";
+import ChatPage from "./ChatPage";
+import ChatListPage from "./ChatListPage";
+import MapPage from "./MapPage";
+import ProfilePage from "./ProfilePage";
+import LogInPage from "./LogInPage";
+import SignUpPage from "./SignUpPage";
 
 export {
-    Home,
-    Chat,
-    Map,
-    Profile
+    HomePage,
+    ChatPage,
+    MapPage,
+    ProfilePage,
+    LogInPage,
+    SignUpPage,
+    ChatListPage
 }
