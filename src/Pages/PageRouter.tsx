@@ -10,7 +10,6 @@ import {
   ChatListPage
 } from "Pages";
 
-import { ChatRoomView } from "Views";
 
 import { AppLayout } from "Layouts";
 
@@ -41,7 +40,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/room/:ChatRoomID",
-    element: <ChatRoomView />,
+    element: <ChatPage />,
   },
   {
     path: "/map",
