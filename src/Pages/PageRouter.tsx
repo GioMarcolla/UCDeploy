@@ -7,7 +7,8 @@ import {
   ProfilePage,
   LogInPage,
   SignUpPage,
-  ChatListPage
+  ChatListPage,
+  ContactsPage
 } from "Pages";
 
 
@@ -71,6 +72,14 @@ const router = createBrowserRouter([
     element: (
       <AppLayout>
         <SignUpPage />
+      </AppLayout>
+    ),
+  },
+  {
+    path: "/contacts",
+    element: (
+      <AppLayout>
+        <ContactsPage />
       </AppLayout>
     ),
   },

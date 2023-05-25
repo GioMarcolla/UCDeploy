@@ -1,4 +1,5 @@
-import React, { FC } from "react";
+import { Box, Flex, Text } from "@chakra-ui/react";
+import React, { FC, ReactNode } from "react";
 import { Link } from "react-router-dom";
 
 // Type ALL props, this helps reduce the need for smoke tests and prevents datartype errors ont he app.
@@ -6,14 +7,20 @@ import { Link } from "react-router-dom";
 type Props = {
   name: string;
   path: string;
+  icon: ReactNode;
 };
 
 // NO Class Components unless 1000% needed!
-let MenuItem: FC<Props> = ({ name, path }: Props) => {
+let MenuItem: FC<Props> = ({ name, path, icon }: Props) => {
   return (
-    <div>
-      <Link to={path}>{name}</Link>
-    </div>
+    <Box>
+      <Link to={path}>
+        <Flex flexDir={"column"} alignItems={"center"}>
+          {icon}
+          <Text>{name}</Text>
+        </Flex>
+      </Link>
+    </Box>
   );
 };
 

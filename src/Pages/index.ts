@@ -5,6 +5,7 @@ import MapPage from "./MapPage";
 import ProfilePage from "./ProfilePage";
 import LogInPage from "./LogInPage";
 import SignUpPage from "./SignUpPage";
+import ContactsPage from "./ContactsPage";
 
 export {
     HomePage,
@@ -13,5 +14,6 @@ export {
     ProfilePage,
     LogInPage,
     SignUpPage,
-    ChatListPage
+    ChatListPage,
+    ContactsPage
 }

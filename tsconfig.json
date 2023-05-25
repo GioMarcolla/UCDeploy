@@ -17,6 +17,10 @@
     "incremental": true
   },
   "paths": {
-    "@/*": ["./src/*"]
+    "@/*": ["./src/*"],
+    "*": [
+      "src/node_modules/@iconscout/react-unicons/*",
+      "src/node_modules/@iconscout/react-unicons-solid/*"
+    ]
   }
 }
