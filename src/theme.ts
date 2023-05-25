@@ -1,3 +1,4 @@
+import "@fontsource/sansita/700.css";
 import { extendTheme } from "@chakra-ui/react";
 import type { StyleFunctionProps } from "@chakra-ui/styled-system";
 
@@ -40,11 +41,13 @@ const theme = extendTheme({
     },
   },
   components: {
-    Icon: {
+    Text: {
       variants: {
-        UCMenuItem: (props: StyleFunctionProps) => ({
-          color: props.colorMode === "dark" ? "purple.UC" : "purple.light",
-          boxSize: "2rem",
+        soft: (props: StyleFunctionProps) => ({
+          fontFamily: "sansita",
+          fontWeight: "bolder",
+          fontStyle: "Italic",
+          color: props.colorMode === "dark" ? "purple.light" : "purple.UC",
         }),
       },
     },

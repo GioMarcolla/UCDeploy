@@ -25,7 +25,7 @@ const Menu: FC<Props> = ({}: Props) => {
     <Icon
       as={FontAwesomeIcon}
       icon={currPath === "map" ? solidCompass : regularCompass}
-      boxSize={"2rem"}
+      boxSize={"1.5rem"}
       color={currPath === "map" ? "green.UC" : "purple.UC"}
     />
   );
@@ -33,16 +33,18 @@ const Menu: FC<Props> = ({}: Props) => {
     <Icon
       as={FontAwesomeIcon}
       icon={currPath === "chats" ? solidComment : regularComment}
-      boxSize={"2rem"}
+      boxSize={"1.5rem"}
       color={currPath === "chats" ? "green.UC" : "purple.UC"}
     />
   );
-  const PlusIcon = <Icon as={FontAwesomeIcon} icon={solidPlus} boxSize={"2rem"} />;
+  const PlusIcon = (
+    <Icon as={FontAwesomeIcon} icon={solidPlus} boxSize={"2rem"} />
+  );
   const ContactsIcon = (
     <Icon
       as={FontAwesomeIcon}
       icon={currPath === "contacts" ? solidAddressBook : regularAddressBook}
-      boxSize={"2rem"}
+      boxSize={"1.5rem"}
       color={currPath === "contacts" ? "green.UC" : "purple.UC"}
     />
   );
@@ -50,13 +52,21 @@ const Menu: FC<Props> = ({}: Props) => {
     <Icon
       as={FontAwesomeIcon}
       icon={currPath === "profile" ? solidUser : regularUser}
-      boxSize={"2rem"}
+      boxSize={"1.5rem"}
       color={currPath === "profile" ? "green.UC" : "purple.UC"}
     />
   );
 
   return (
-    <Flex flexDir={"row"} justifyContent={"space-evenly"} w={"100%"}>
+    <Flex
+      flexDir={"row"}
+      justifyContent={"space-evenly"}
+      w={"100%"}
+      pos={"fixed"}
+      bottom={"0"}
+      borderTop={"3px var(--chakra-colors-black-light) solid"}
+      paddingY={"1rem"}
+    >
       <MenuItem name="Explore" path="/map" icon={ExploreIcon} />
       <MenuItem name="Chats" path="/chats" icon={ChatsIcon} />
 

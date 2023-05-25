@@ -17,7 +17,7 @@ let MenuItem: FC<Props> = ({ name, path, icon }: Props) => {
       <Link to={path}>
         <Flex flexDir={"column"} alignItems={"center"}>
           {icon}
-          <Text>{name}</Text>
+          <Text variant={"soft"}>{name}</Text>
         </Flex>
       </Link>
     </Box>
