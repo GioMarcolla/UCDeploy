@@ -13,11 +13,11 @@ type Props = {
 // NO Class Components unless 1000% needed!
 let MenuItem: FC<Props> = ({ name, path, icon }: Props) => {
   return (
-    <Box>
+    <Box w={"15% !important"}>
       <Link to={path}>
         <Flex flexDir={"column"} alignItems={"center"}>
           {icon}
-          <Text variant={"soft"}>{name}</Text>
+          <Text variant={"soft"} fontSize={"sm"}>{name}</Text>
         </Flex>
       </Link>
     </Box>

@@ -25,7 +25,7 @@ const Menu: FC<Props> = ({}: Props) => {
     <Icon
       as={FontAwesomeIcon}
       icon={currPath === "map" ? solidCompass : regularCompass}
-      boxSize={"1.5rem"}
+      boxSize={"1.3rem"}
       color={currPath === "map" ? "green.UC" : "purple.UC"}
     />
   );
@@ -33,18 +33,28 @@ const Menu: FC<Props> = ({}: Props) => {
     <Icon
       as={FontAwesomeIcon}
       icon={currPath === "chats" ? solidComment : regularComment}
-      boxSize={"1.5rem"}
+      boxSize={"1.3rem"}
       color={currPath === "chats" ? "green.UC" : "purple.UC"}
     />
   );
   const PlusIcon = (
-    <Icon as={FontAwesomeIcon} icon={solidPlus} boxSize={"2rem"} />
+    <Icon
+      as={FontAwesomeIcon}
+      icon={solidPlus}
+      boxSize={"2.5rem"}
+      borderRadius={"100%"}
+      bg="green.UC"
+      color="white.UC"
+      p={"0.75rem"}
+      boxShadow={"0 0 10px #000D"}
+      marginTop={"calc(-1*(100% - 0.75rem))"}
+    />
   );
   const ContactsIcon = (
     <Icon
       as={FontAwesomeIcon}
       icon={currPath === "contacts" ? solidAddressBook : regularAddressBook}
-      boxSize={"1.5rem"}
+      boxSize={"1.3rem"}
       color={currPath === "contacts" ? "green.UC" : "purple.UC"}
     />
   );
@@ -52,7 +62,7 @@ const Menu: FC<Props> = ({}: Props) => {
     <Icon
       as={FontAwesomeIcon}
       icon={currPath === "profile" ? solidUser : regularUser}
-      boxSize={"1.5rem"}
+      boxSize={"1.3rem"}
       color={currPath === "profile" ? "green.UC" : "purple.UC"}
     />
   );
@@ -64,8 +74,10 @@ const Menu: FC<Props> = ({}: Props) => {
       w={"100%"}
       pos={"fixed"}
       bottom={"0"}
-      borderTop={"3px var(--chakra-colors-black-light) solid"}
-      paddingY={"1rem"}
+      borderTop={"2px var(--chakra-colors-black-light) solid"}
+      paddingX={"0.75rem"}
+      paddingTop={"0.75rem"}
+      paddingBottom={"0.5rem"}
     >
       <MenuItem name="Explore" path="/map" icon={ExploreIcon} />
       <MenuItem name="Chats" path="/chats" icon={ChatsIcon} />
