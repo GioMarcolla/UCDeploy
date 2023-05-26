@@ -46,8 +46,7 @@ const theme = extendTheme({
         soft: (props: StyleFunctionProps) => ({
           fontFamily: "sansita",
           fontWeight: "bolder",
-          fontStyle: "Italic",
-          color: props.colorMode === "dark" ? "purple.light" : "purple.UC",
+          fontStyle: "Italic"
         }),
       },
     },

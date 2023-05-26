@@ -8,16 +8,23 @@ type Props = {
   name: string;
   path: string;
   icon: ReactNode;
+  currPath: string;
 };
 
 // NO Class Components unless 1000% needed!
-let MenuItem: FC<Props> = ({ name, path, icon }: Props) => {
+let MenuItem: FC<Props> = ({ name, path, icon, currPath }: Props) => {
   return (
     <Box w={"15% !important"}>
       <Link to={path}>
         <Flex flexDir={"column"} alignItems={"center"}>
           {icon}
-          <Text variant={"soft"} fontSize={"sm"}>{name}</Text>
+          <Text
+            variant={"soft"}
+            fontSize={"sm"}
+            color={"/" + currPath === path ? "green.UC" : "purple.UC"}
+          >
+            {name}
+          </Text>
         </Flex>
       </Link>
     </Box>

@@ -79,13 +79,13 @@ const Menu: FC<Props> = ({}: Props) => {
       paddingTop={"0.75rem"}
       paddingBottom={"0.5rem"}
     >
-      <MenuItem name="Explore" path="/map" icon={ExploreIcon} />
-      <MenuItem name="Chats" path="/chats" icon={ChatsIcon} />
+      <MenuItem name="Explore" path="/map" icon={ExploreIcon} currPath={currPath} />
+      <MenuItem name="Chats" path="/chats" icon={ChatsIcon} currPath={currPath} />
 
       <Button variant={"link"}>{PlusIcon}</Button>
 
-      <MenuItem name="Contacts" path="/contacts" icon={ContactsIcon} />
-      <MenuItem name="Profile" path="/profile" icon={ProfileIcon} />
+      <MenuItem name="Contacts" path="/contacts" icon={ContactsIcon} currPath={currPath} />
+      <MenuItem name="Profile" path="/profile" icon={ProfileIcon} currPath={currPath} />
     </Flex>
   );
 };
