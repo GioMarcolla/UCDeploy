@@ -10,7 +10,10 @@ const StatusHeader: FC<Props> = (props: Props) => {
       <Text variant={"soft"} fontSize={"lg"}>
         Night Owl
       </Text>
-      <Flex>
+      <Flex
+        alignItems={"center"}
+        gap={"0.5rem"}
+      >
         <StatusMarker currStatus={"active"} />
         <Text variant={"soft"} fontSize={"15px"} color={"purple.light"}>
           Signed-in at SCH

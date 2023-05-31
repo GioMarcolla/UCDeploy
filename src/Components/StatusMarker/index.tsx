@@ -25,7 +25,7 @@ let StatusMarker: FC<Props> = ({ currStatus }: Props) => {
 
   return (
     <Box as={Flex}>
-      <Circle size="1rem" bg={statusColors[status as keyof colorTypes] || "grey"} />
+      <Circle size="0.8rem" bg={statusColors[status as keyof colorTypes] || "grey"} />
     </Box>
   );
 };
