@@ -2,7 +2,7 @@ import React, { FC } from "react";
 
 type Props = {};
 
-let SingUpPage: FC<Props> = (props: Props) => {
+const SingUpPage: FC<Props> = (props: Props) => {
   return <div>SingUp</div>;
 };
 

@@ -2,7 +2,9 @@ import React, { FC } from "react";
 import { Box, Flex } from "@chakra-ui/react";
 import { SearchButton, StatusHeader, ProfileAvatar } from "Components";
 
-let TopBar: FC = () => {
+type Props = {};
+
+const TopBar: FC<Props> = (props: Props) => {
   return (
     <Flex
       w={"100%"}

@@ -5,7 +5,7 @@ type Props = {
   currStatus: string;
 };
 
-let StatusMarker: FC<Props> = ({ currStatus }: Props) => {
+const StatusMarker: FC<Props> = ({ currStatus }: Props) => {
   //Grab user status from store
   const status:string = currStatus;
 

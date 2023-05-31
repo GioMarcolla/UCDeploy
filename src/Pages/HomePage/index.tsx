@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 import { ProfileInfoView, UCAccountView, HomeBottomView } from "Views";
-import { Box, VStack, GridItem } from "@chakra-ui/react";
+import { Box, VStack } from "@chakra-ui/react";
 
 type Props = {};
 
-let HomePage: FC<Props> = (props: Props) => {
+const HomePage: FC<Props> = (props: Props) => {
   const dw = window.outerWidth;
   return (
     <Box>
