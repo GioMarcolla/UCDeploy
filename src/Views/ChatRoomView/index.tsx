@@ -2,7 +2,7 @@ import React, { FC } from "react";
 
 type Props = {};
 
-const ChatRoomView: FC<Props> = ({}: Props) => {
+const ChatRoomView: FC<Props> = (props: Props) => {
   return <div>Chat Room</div>;
 };
 
