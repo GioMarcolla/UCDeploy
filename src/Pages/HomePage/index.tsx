@@ -22,4 +22,4 @@ let HomePage: FC<Props> = (props: Props) => {
   );
 };
 
-export default HomePage
+export default HomePage;
