@@ -6,7 +6,7 @@ type Props = {};
 const ProfileAvatar: FC<Props> = (props: Props) => {
   return (
     <Box>
-      <Avatar name="Select Profile Name" src="https://picsum.photos/300/300" />
+      <Avatar name="Select Profile Name" src="/logo512.png" />
     </Box>
   );
 };
