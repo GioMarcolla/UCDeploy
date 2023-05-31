@@ -3,6 +3,7 @@ import { extendTheme } from "@chakra-ui/react";
 import type { StyleFunctionProps } from "@chakra-ui/styled-system";
 
 const theme = extendTheme({
+  
   colors: {
     // Need the color pallet from Bill, at leats 4 shades per color
     green: {

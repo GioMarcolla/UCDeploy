@@ -1,3 +1,4 @@
 import ChatRoomView from "./ChatRoomView";
+import ProfileInfoView from "./ProfileInfoView";
 
-export { ChatRoomView };
+export { ChatRoomView, ProfileInfoView };
