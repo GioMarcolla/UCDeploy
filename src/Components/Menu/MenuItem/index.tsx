@@ -12,7 +12,7 @@ type Props = {
 };
 
 // NO Class Components unless 1000% needed!
-let MenuItem: FC<Props> = ({ name, path, icon, currPath }: Props) => {
+const MenuItem: FC<Props> = ({ name, path, icon, currPath }: Props) => {
   return (
     <Box w={"15% !important"}>
       <Link to={path}>

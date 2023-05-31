@@ -19,7 +19,7 @@ import {
 } from "@fortawesome/free-regular-svg-icons";
 
 type Props = {};
-const Menu: FC<Props> = ({}: Props) => {
+const Menu: FC<Props> = (props: Props) => {
   const currPath = useLocation().pathname.split("/")[1];
   const ExploreIcon = (
     <Icon
@@ -79,13 +79,33 @@ const Menu: FC<Props> = ({}: Props) => {
       paddingTop={"0.75rem"}
       paddingBottom={"0.5rem"}
     >
-      <MenuItem name="Explore" path="/map" icon={ExploreIcon} currPath={currPath} />
-      <MenuItem name="Chats" path="/chats" icon={ChatsIcon} currPath={currPath} />
+      <MenuItem
+        name="Explore"
+        path="/map"
+        icon={ExploreIcon}
+        currPath={currPath}
+      />
+      <MenuItem
+        name="Chats"
+        path="/chats"
+        icon={ChatsIcon}
+        currPath={currPath}
+      />
 
       <Button variant={"link"}>{PlusIcon}</Button>
 
-      <MenuItem name="Contacts" path="/contacts" icon={ContactsIcon} currPath={currPath} />
-      <MenuItem name="Profile" path="/profile" icon={ProfileIcon} currPath={currPath} />
+      <MenuItem
+        name="Contacts"
+        path="/contacts"
+        icon={ContactsIcon}
+        currPath={currPath}
+      />
+      <MenuItem
+        name="Profile"
+        path="/profile"
+        icon={ProfileIcon}
+        currPath={currPath}
+      />
     </Flex>
   );
 };

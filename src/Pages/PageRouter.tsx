@@ -27,7 +27,7 @@ const router = createBrowserRouter([
     path: "/profile",
     element: (
       <AppLayout>
-        <ProfilePage />
+        <HomePage />
       </AppLayout>
     ),
   },
@@ -55,7 +55,7 @@ const router = createBrowserRouter([
     path: "/home",
     element: (
       <AppLayout>
-        <HomePage />
+        <ProfilePage />
       </AppLayout>
     ),
   },
